@@ -1,116 +1,176 @@
-.box{
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: 100px 70px 500px 200px;
-
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-.header{
-    grid-column-start: 1;
-    grid-column-end:5 ;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid black;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 
-
+/* Header */
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
 }
-.subheader{
-    grid-column-start: 1;
-    grid-column-end:5 ;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: rgb(47, 45, 45);
-    color: white;
-    border: 1px solid white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 
+/* Subheader */
+.subheader {
+  background-color: rgb(47, 45, 45);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
 }
 .subheader:hover {
-  background-color:blue;
+  background-color: blue;
   color: white;
 }
-.box1{
-    border: 1px dotted red;
-    background-color: rgb(130, 164, 227);
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-   /* grid-column-start:2 ;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;*/
 
+/* Container: 4 boxes in one row */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
-.box11{
-width: 150px;
-height: 150px;
-border: 1px solid red;
-/* background-color: rgb(130, 164, 130); */
-margin-top: 20px;
-margin-left: 20px;
-background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_furnishings_2._SY232_CB555629502_.jpg);
-background-size: cover;
 
+/* Each Box */
+.box {
+  border: 1px dotted red;
+  background-color: rgb(220, 240, 230);
+  padding: 15px;
 }
+
+/* Heading */
+.box-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Inner boxes layout */
+.inner-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* default 2x2 */
+  gap: 10px;
+}
+.inner-boxes.two-items {
+  grid-template-columns: repeat(2, 1fr); /* only 2 side by side */
+}
+
+/* Each inner item */
+.inner {
+  text-align: center;
+}
+
+/* Inner images */
+.inner div {
+  border: 1px solid red;
+  height: 150px;
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+/* Caption */
 .caption {
-  margin-top: 23vh;
   font-size: 14px;
-  color: #000000;
-  font-style: italic;
+  margin-top: 5px;
+  color: #111;
 }
-.box12{
-width: 150px;
-height: 150px;
-border: 1px solid red;
-background-color:rgb(193, 111, 148);
-margin-top: 20px;
-margin-left: 20px;
+
+/* Box1 inner images */
+.box11 {
+  background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_furnishings_2._SY232_CB555629502_.jpg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
 }
-.box13{
-width: 150px;
-height: 150px;
-border: 1px solid red;
-background-color:rgb(174, 116, 95);
-margin-top: 20px;
-margin-left: 20px;
+.box12 {
+  background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_decor_1._SY232_CB555629502_.jpg');
+  background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
 }
-.box14{
-width: 150px;
-height: 150px;
-border: 1px solid red;
-background-color:rgb(235, 146, 191);
-margin-top: 20px;
-margin-left: 20px;
+.box13 {
+  background-image: url('./image1.png');
+  background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
 }
-.box2{
-border: 1px dotted red;
-    background-color:rgb(137, 237, 137);
-
-
+.box14 {
+  background-image: url('./image2.png');
+  background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
 }
-.box3{
-    border: 1px dotted red;
-    background-color:rgb(215, 182, 200);
 
+/* Box2 inner images */
+.box21 { background-image: url('./image3.png');
+background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%; }
+.box22 { background-image: url('./image4.png'); 
+background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;}
+.box23 { background-image: url('./image5.png');
+background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;}
+.box24 { background-image: url('./image6.png'); 
+background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;}
+
+/* Box3 inner images */
+.box31 {
+  background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt._SY232_CB553870684_.jpg');
+  background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
 }
-.box4{
-border: 1px dotted red;
-    background-color:rgb(183, 114, 128);
+.box32 {
+  background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg');
+  background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
 }
-.footer{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-color: dimgray;
+.box33 {
+  background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise._SY232_CB553870684_.jpg');
+  background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+}
+.box34 {
+  background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg');
+  background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+}
 
+/* Box4 inner images */
+.box41 { background-image: url('./image7.png'); }
+.box42 { background-image: url('./image8.png'); }
 
-
-
+/* Footer */
+.footer {
+  background-color: dimgray;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
