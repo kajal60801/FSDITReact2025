@@ -12,34 +12,35 @@
 // h2.style.background="skyblue";
 //  container[0].innerHTML
 // console.log(h2);
-const container=document.getElementsByClassName('container');
+
+// const container=document.getElementsByClassName('container');
 
 // container[0].innerHTML='<h2 style=color:red>Hello World</h2>';
 // console.log(container);
 
- const button=document.getElementById('btn');
- console.log(button);
-const h2=document.createElement('h2');
-h2.innerText="ABES Engineering College";
-h2.style.color='green';
-h2.style.backgroundColor='skyblue'
-console.log(h2);
-container[0].appendChild(h2);
- document.getElementById('out').innerHTML="<h2>loading img....</h2>"
+//  const button=document.getElementById('btn');
+//  console.log(button);
+// const h2=document.createElement('h2');
+// h2.innerText="ABES Engineering College";
+// h2.style.color='green';
+// h2.style.backgroundColor='skyblue'
+// console.log(h2);
+// container[0].appendChild(h2);
+//  document.getElementById('out').innerHTML="<h2>loading img....</h2>"
 
- function msg(){
-    document.getElementById('out').innerHTML="<h2>loading img....</h2>"
+//  function msg(){
+//     document.getElementById('out').innerHTML="<h2>loading img....</h2>"
 
-    setTimeout(()=>{
-        const img=document.createElement('img');
-img.src="https://img.freepik.com/free-photo/laptop-with-sun-background_1232-429.jpg?semt=ais_incoming&w=740&q=80";
-img.setAttribute('height','200px');
-img.setAttribute('width','200px');
-console.log(img);
-document.getElementById('out').innerHTML="<h2>welcome to abes ec</h2>"
-container[0].appendChild(img);
+//     setTimeout(()=>{
+//         const img=document.createElement('img');
+// img.src="https://img.freepik.com/free-photo/laptop-with-sun-background_1232-429.jpg?semt=ais_incoming&w=740&q=80";
+// img.setAttribute('height','200px');
+// img.setAttribute('width','200px');
+// console.log(img);
+// document.getElementById('out').innerHTML="<h2>welcome to abes ec</h2>"
+// container[0].appendChild(img);
 
-    },3000);
+//     },3000);
 
 //     const img=document.createElement('img');
 // img.src="https://img.freepik.com/free-photo/laptop-with-sun-background_1232-429.jpg?semt=ais_incoming&w=740&q=80";
@@ -48,7 +49,7 @@ container[0].appendChild(img);
 // console.log(img);
 // document.getElementById('out').innerHTML="<h2>welcome to abes ec</h2>"
 // container[0].appendChild(img);
- }
+//  }
 // const img=document.createElement('img');
 // img.src="download.jpeg";
 // img.setAttribute('height','200px');
@@ -78,4 +79,58 @@ container[0].appendChild(img);
 //      out.textContent = "Welcome to ABES";
 //     }
 
-    button.addEventListener('click', msg);
+    // button.addEventListener('click', msg);
+   
+
+//  const button = document.getElementById('btn');
+//     const output = document.getElementById('out');
+
+    // function msg() {
+        
+    //  out.textContent = "Welcome to ABES";
+//     }
+//  }
+//     button.addEventListener('click', msg);
+
+// console.log("start")
+// setTimeout(()=>{
+//    console.log("welcome")
+// },20000)
+// console.log('end');
+
+// function greetmsg(){
+//     return "welcome to abes ec"
+// }
+// function msgHandler(msg,clbk){
+//     console.log(msg);
+//     const data=clbk();  
+//         return msg+","+data;
+// }
+// const completemsg=msgHandler("hii",greetmsg);
+// console.log(completemsg);
+
+// const student=["mittal","kajal","shreya"];
+// student.forEach((name)=>{
+//     msgHandler(name,greetmsg)
+// })
+
+// const mypromise= new Promise(() => {
+//    const password="789ghik";
+//    if(password.length>8){
+//       resolve("password length is ok");
+//    }
+//    else{
+//       PromiseRejectionEvent("password length is not as per our policy");
+//    }
+   
+// })
+// mypromise.then((result)=>{console.log(result)})
+// .catch((err)=>{console.log{err}})
+// .finally(()=>{
+//    console.log("all the resource have closed successfully");
+// })
+// function handledata(){
+//    console.log(mypromise);
+//    console.log(result)
+// }
+// handledata();
