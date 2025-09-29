@@ -89,27 +89,29 @@
 // }
 // greet("python");
 
-function selectlanguage(lang){
-    let result;
-    if(lang=="java"){
-        function javaCompiler(){
-            return "using java compiler"
-        }
-        result=javaCompiler();
-    }
-    else if(lang=="c"){
-        function cCompiler(){
-            return "using c compiler"
-        }
-        result=cCompiler();
-    }
-    else {
-        result="no compiler found";
-    }
-    return result;
-}
-const data =selectlanguage()
-console.log(data);
+// function selectlanguage(lang){
+//     let result;
+//     if(lang=="java"){
+//         function javaCompiler(){
+//             return "using java compiler"
+//         }
+//         result=javaCompiler();
+//     }
+//     else if(lang=="c"){
+//         function cCompiler(){
+//             return "using c compiler"
+//         }
+//         result=cCompiler();
+//     }
+//     else {
+//         result="no compiler found";
+//     }
+//     return result;
+// }
+// const data =selectlanguage()
+// console.log(data);
+
+
 
 
 
